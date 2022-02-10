@@ -1,0 +1,3245 @@
+          AutoDock 4.2 Release 4.2.6   
+         (C) 1989-2012 The Scripps Research Institute
+        AutoDock comes with ABSOLUTELY NO WARRANTY.
+        AutoDock is free software, and you are welcome
+        to redistribute it under certain conditions;
+        for details type 'autodock4 -C'
+
+                     main.cc  $Revision: 1.213 $
+
+                   Compiled on Jul 18 2014 at 18:33:09
+
+
+This file was created at:			9:04 47" a.m., 03/11/2020
+                   on host:		"angelina-inspiron"
+Current Working Directory = "/media/angelina-inspiron/OS/Users/emili/Documents/2019/Lucrecia/X_bond_optimization/B-Prediction/CHLORINE/11-docking_halobenzene/EP-OX_halobenzene/parameter_tunning/complexes_eps3/1j3j"
+
+      ________________________________________________________________
+
+                   SETTING UP DEFAULT PARAMETER LIBRARY
+      ________________________________________________________________
+
+
+Random number generator was seeded with values 5808, 1583928287.
+Docking parameter file (DPF) used for this docking:		chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DPF> autodock_parameter_version 4.2       # used by autodock to validate parameter set
+
+	Autodock parameter version 4.2.
+DPF> parameter_file AD4Zn.dat             # parameter library filename 
+
+Using read_parameter_library() to try to open and read "AD4Zn.dat".
+
+DPF> outlev 1                             # diagnostic output level
+
+Output Level = 1  ADT-COMPATIBLE OUTPUT DURING DOCKING.
+DPF> intelec                              # calculate internal electrostatics
+
+Electrostatic energies will be calculated for all non-bonds between moving atoms.
+DPF> seed pid time                        # seeds for random generator
+
+Random number generator was seeded with values 5808, 1583928287.
+DPF> ligand_types A Cl Xx                 # atoms types in ligand
+
+DPF> fld 1j3j_chainA_h_edited_rec.maps.fld
+
+Opening Grid Map Dimensions file:		1j3j_chainA_h_edited_rec.maps.fld
+Grid Point Spacing =				0.375 Angstroms
+
+Even Number of User-specified Grid Points =	26 x-points
+						26 y-points
+						26 z-points
+
+Coordinates of Central Grid Point of Maps =	(15.455, 33.333, 43.084)
+Macromolecule file used to create Grid Maps =	1j3j_chainA_h_edited_rec.pdbqt
+Grid Parameter file used to create Grid Maps =	1j3j_chainA_h_edited_rec.gpf
+Minimum coordinates in grid = (10.580, 28.458, 38.209)
+Maximum coordinates in grid = (20.330, 38.208, 47.959)
+
+DPF> map 1j3j_chainA_h_edited_rec.A.map   
+
+DPF> map 1j3j_chainA_h_edited_rec.Cl.map  
+
+DPF> map 1j3j_chainA_h_edited_rec.Xx.map  
+
+DPF> elecmap 1j3j_chainA_h_edited_rec.e.map
+
+DPF> desolvmap 1j3j_chainA_h_edited_rec.d.map
+
+DPF> move chlorobenzene.pdbqt             # small molecule
+
+1,4-interactions will be _ignored_ in the non-bonded internal energy calculation.
+
+Ligand PDBQT file = "chlorobenzene.pdbqt"
+
+INPUT LIGAND PDBQT FILE:
+________________________
+
+INPUT-LIGAND-PDBQT: REMARK  0 active torsions:
+INPUT-LIGAND-PDBQT: REMARK  status: ('A' for Active; 'I' for Inactive)
+INPUT-LIGAND-PDBQT: ROOT
+INPUT-LIGAND-PDBQT: HETATM    1 CL6  8CL A 151      14.759  32.486  44.145  0.00  0.00    -0.084 Cl
+INPUT-LIGAND-PDBQT: HETATM    2 Xx   8CL A 151      13.713  31.411  45.468  0.00  0.00     0.000 Xx
+INPUT-LIGAND-PDBQT: HETATM    3  C1  8CL A 151      15.661  33.413  43.004  0.00  0.00     0.034 A 
+INPUT-LIGAND-PDBQT: HETATM    4  C2  8CL A 151      16.461  34.499  43.439  0.00  0.00     0.024 A 
+INPUT-LIGAND-PDBQT: HETATM    5  C3  8CL A 151      17.197  35.254  42.500  0.00  0.00     0.002 A 
+INPUT-LIGAND-PDBQT: HETATM    6  C4  8CL A 151      17.136  34.926  41.129  0.00  0.00     0.000 A 
+INPUT-LIGAND-PDBQT: HETATM    7  C5  8CL A 151      16.340  33.844  40.699  0.00  0.00     0.002 A 
+INPUT-LIGAND-PDBQT: HETATM    8  C6  8CL A 151      15.603  33.086  41.636  0.00  0.00     0.024 A 
+INPUT-LIGAND-PDBQT: ENDROOT
+INPUT-LIGAND-PDBQT: TORSDOF 0
+________________________________________________________________________________
+
+Total charge on ligand                               =	+0.002 e
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+
+*** No Rotatable Bonds detected in Small Molecule. ***
+
+Number of atoms in ligand:  8
+
+Number of non-hydrogen atoms in ligand:  8
+
+Number of vibrational degrees of freedom of ligand:  18
+
+
+Number of torsional degrees of freedom = 0
+Estimated loss of torsional free energy upon binding = +0.0000 kcal/mol
+
+
+DPF> about 15.8588 33.6149 42.7525        # small molecule center
+
+Small molecule center of rotation =	(+15.859, +33.615, +42.752)
+
+DPF> tran0 random                         # initial coordinates/A or random
+
+Initial translation =			(17.796, 33.175, 39.386) Angstroms
+DPF> quaternion0 random                   # initial orientation
+
+Each run will begin with a new, random initial orientation.
+Initial quaternion,  (x,y,z,w) =	( 0.383, 0.623, 0.075, -0.678 ),
+DPF> dihe0 random                         # initial dihedrals (relative) or random
+
+DPF> torsdof 0                            # torsional degrees of freedom
+
+Number of torsional degrees of freedom = 0
+Free energy coefficient for torsional degrees of freedom = 0.2983 as specified in parameter library "AD4Zn.dat".
+
+Estimated loss of torsional free energy upon binding = +0.0000 kcal/mol
+
+DPF> rmstol 2.0                           # cluster_tolerance/A
+
+Maximum RMS tolerance for conformational cluster analysis = 2.00 Angstroms
+DPF> extnrg 1000.0                        # external grid energy
+
+External grid energy (beyond grid map walls) = 1000.00
+
+DPF> e0max 0.0 10000                      # max initial energy; max number of retries
+
+Using user-specified maximum number of retries for simanneal initialization, 10000 retries.
+If the simanneal initial energy is greater than e0max, 0.000,
+then a new, random initial state will be created.
+
+DPF> ga_pop_size 150                      # number of individuals in population
+
+A population of 150 individuals will be used
+DPF> ga_num_evals 2500000                 # maximum number of energy evaluations
+
+There will be at most 2500000 function evaluations used.
+DPF> ga_num_generations 27000             # maximum number of generations
+
+The GA will run for at most 27000 generations.
+DPF> ga_elitism 1                         # number of top individuals to survive to next generation
+
+The 1 best will be preserved each GA generation.
+DPF> ga_mutation_rate 0.02                # rate of gene mutation
+
+The mutation rate is 0.020000.
+DPF> ga_crossover_rate 0.8                # rate of crossover
+
+The crossover rate is 0.800000.
+DPF> ga_window_size 10                    # 
+
+The GA's selection window is 10 generations.
+DPF> ga_cauchy_alpha 0.0                  # Alpha parameter of Cauchy distribution
+
+The alpha parameter (for the Cauchy distribution) is being set to 0.000000.
+DPF> ga_cauchy_beta 1.0                   # Beta parameter Cauchy distribution
+
+The beta parameter (for the Cauchy distribution) is being set to 1.000000.
+DPF> set_ga                               # set the above parameters for GA or LGA
+
+DPF> sw_max_its 300                       # iterations of Solis & Wets local search
+
+Solis & Wets algorithms will perform at most 300 iterations.
+DPF> sw_max_succ 4                        # consecutive successes before changing rho
+
+Solis & Wets algorithms expand rho every 4 in a row successes.
+DPF> sw_max_fail 4                        # consecutive failures before changing rho
+
+Solis & Wets algorithms contract rho every 4 in a row failures.
+DPF> sw_rho 1.0                           # size of local search space to sample
+
+rho is set to 1.000000.
+DPF> sw_lb_rho 0.01                       # lower bound on rho
+
+rho will never get smaller than 0.010000.
+DPF> ls_search_freq 0.06                  # probability of performing local search on individual
+
+Local search will be performed with frequency 0.060000.
+DPF> set_psw1                             # set the above pseudo-Solis & Wets parameters
+
+Creating a new Local Search object using the pseudo-Solis-Wets algorithm (pSW1) with the current settings.
+
+DPF> unbound_model bound                  # state of unbound ligand
+
+DPF> ga_run 50                            # do this many hybrid GA-LS runs
+
+centering ligand on specified point: 15.859 33.615 42.752
+Furthest true ligand atom from "about" center is 4.103 Angstroms (maxrad).
+Number of requested GA dockings = 50 runs
+Unbound model to be used is 'same as bound' [AutoDock 4.2 default].
+
+	BEGINNING GENETIC ALGORITHM DOCKING 1 of 50
+Run: 1 Seed: 294539922 1406037881 [ Run 1 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.021 33.153 42.459 quatxyzw -0.573783 -0.480455 0.661507 0.048419 center 15.859 33.615 42.752 ntor 0
+State:	 16.021  33.153  42.459  -0.574 -0.481  0.662 174.449  
+
+DOCKED: MODEL        1
+DOCKED: USER    Run = 1
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.85 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.020850 33.153342 42.458799
+DOCKED: USER    NEWDPF quaternion0 -0.573783 -0.480455 0.661507 0.048419
+DOCKED: USER    NEWDPF axisangle0 -0.574456 -0.481019 0.662284 174.449476
+DOCKED: USER    NEWDPF quat0 -0.574456 -0.481019 0.662284 174.449476
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.257  43.832 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.452  31.407  45.140 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.784  32.991  42.705 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.873  32.500  41.378 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.759  33.105  40.460 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.554  34.198  40.864 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.463  34.685  42.185 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.577  34.083  43.106 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 2 of 50
+Run: 2 Seed: 1589284457 1038902596 [ Run 2 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.000 33.167 42.464 quatxyzw 0.047800 0.051235 0.025797 0.997208 center 15.859 33.615 42.752 ntor 0
+State:	 16.000  33.167  42.464   0.640  0.686  0.345  8.564  
+
+DOCKED: MODEL        2
+DOCKED: USER    Run = 2
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.54 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.999986 33.166999 42.463818
+DOCKED: USER    NEWDPF quaternion0 0.047800 0.051235 0.025797 0.997208
+DOCKED: USER    NEWDPF axisangle0 0.640159 0.686175 0.345486 8.564315
+DOCKED: USER    NEWDPF quat0 0.640159 0.686175 0.345486 8.564315
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.232  43.832 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.473  31.342  45.132 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.767  33.000  42.711 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.580  34.085  43.125 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.447  34.709  42.202 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.505  34.252  40.868 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.696  33.171  40.460 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.827  32.544  41.381 -0.43 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 3 of 50
+Run: 3 Seed: 259327676 188290553 [ Run 3 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.962
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.996 33.175 42.468 quatxyzw -0.042640 -0.048869 -0.026542 -0.997542 center 15.859 33.615 42.752 ntor 0
+State:	 15.996  33.175  42.468  -0.608 -0.697 -0.379 -8.037  
+
+DOCKED: MODEL        3
+DOCKED: USER    Run = 3
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.67 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.995674 33.174799 42.468000
+DOCKED: USER    NEWDPF quaternion0 -0.042640 -0.048869 -0.026542 -0.997542
+DOCKED: USER    NEWDPF axisangle0 -0.608470 -0.697362 -0.378750 -8.036784
+DOCKED: USER    NEWDPF quat0 -0.608470 -0.697362 -0.378750 -8.036784
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.227  43.832 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.479  31.325  45.128 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.764  33.006  42.714 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.579  34.085  43.136 -0.29 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.443  34.718  42.216 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.494  34.275  40.877 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.683  33.199  40.461 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.818  32.563  41.379 -0.43 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 4 of 50
+Run: 4 Seed: 1000247859 1035985603 [ Run 4 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.010 33.164 42.461 quatxyzw -0.571460 -0.489330 0.657331 0.043653 center 15.859 33.615 42.752 ntor 0
+State:	 16.010  33.164  42.461  -0.572 -0.490  0.658 174.996  
+
+DOCKED: MODEL        4
+DOCKED: USER    Run = 4
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.85 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.009958 33.163989 42.461133
+DOCKED: USER    NEWDPF quaternion0 -0.571460 -0.489330 0.657331 0.043653
+DOCKED: USER    NEWDPF axisangle0 -0.572005 -0.489797 0.657958 174.996149
+DOCKED: USER    NEWDPF quat0 -0.572005 -0.489797 0.657958 174.996149
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.231  43.820 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.463  31.345  45.114 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.775  32.995  42.705 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.862  32.533  41.368 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.741  33.163  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.531  34.252  40.883 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.441  34.710  42.214 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.563  34.083  43.125 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 5 of 50
+Run: 5 Seed: 1237391232 1181448858 [ Run 5 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.985 33.166 42.465 quatxyzw -0.565065 -0.493760 0.659195 0.048634 center 15.859 33.615 42.752 ntor 0
+State:	 15.985  33.166  42.465  -0.566 -0.494  0.660 174.425  
+
+DOCKED: MODEL        5
+DOCKED: USER    Run = 5
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.81 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.984591 33.166013 42.465030
+DOCKED: USER    NEWDPF quaternion0 -0.565065 -0.493760 0.659195 0.048634
+DOCKED: USER    NEWDPF axisangle0 -0.565734 -0.494345 0.659976 174.424743
+DOCKED: USER    NEWDPF quat0 -0.565734 -0.494345 0.659976 174.424743
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.213  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.486  31.308  45.138 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.754  32.993  42.710 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.841  32.530  41.374 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.703  33.173  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.476  34.277  40.876 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.387  34.737  42.206 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.525  34.096  43.124 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 6 of 50
+Run: 6 Seed: 879619630 187288259 [ Run 6 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.977 33.182 42.472 quatxyzw -0.563806 -0.499235 0.656860 0.037703 center 15.859 33.615 42.752 ntor 0
+State:	 15.977  33.182  42.472  -0.564 -0.500  0.657 175.678  
+
+DOCKED: MODEL        6
+DOCKED: USER    Run = 6
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.89 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.977140 33.181696 42.472170
+DOCKED: USER    NEWDPF quaternion0 -0.563806 -0.499235 0.656860 0.037703
+DOCKED: USER    NEWDPF axisangle0 -0.564207 -0.499591 0.657328 175.678503
+DOCKED: USER    NEWDPF quat0 -0.564207 -0.499591 0.657328 175.678503
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.208  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.494  31.283  45.130 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.748  33.005  42.716 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.818  32.571  41.369 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.675  33.228  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.460  34.317  40.892 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.387  34.749  42.233 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.531  34.094  43.146 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 7 of 50
+Run: 7 Seed: 590134700 1428779107 [ Run 7 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.011 33.152 42.460 quatxyzw -0.571176 -0.483518 0.661438 0.049665 center 15.859 33.615 42.752 ntor 0
+State:	 16.011  33.152  42.460  -0.572 -0.484  0.662 174.306  
+
+DOCKED: MODEL        7
+DOCKED: USER    Run = 7
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.78 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.011054 33.152335 42.459904
+DOCKED: USER    NEWDPF quaternion0 -0.571176 -0.483518 0.661438 0.049665
+DOCKED: USER    NEWDPF axisangle0 -0.571882 -0.484116 0.662256 174.306428
+DOCKED: USER    NEWDPF quat0 -0.571882 -0.484116 0.662256 174.306428
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.243  43.835 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.463  31.380  45.143 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.776  32.987  42.706 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.865  32.501  41.378 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.744  33.115  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.533  34.213  40.864 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.441  34.696  42.186 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.562  34.084  43.108 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 8 of 50
+Run: 8 Seed: 491130443 1460007783 [ Run 8 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.006 33.145 42.458 quatxyzw -0.059666 -0.057401 -0.021564 -0.996333 center 15.859 33.615 42.752 ntor 0
+State:	 16.006  33.145  42.458  -0.697 -0.671 -0.252 -9.816  
+
+DOCKED: MODEL        8
+DOCKED: USER    Run = 8
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.56 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.005564 33.144561 42.457635
+DOCKED: USER    NEWDPF quaternion0 -0.059666 -0.057401 -0.021564 -0.996333
+DOCKED: USER    NEWDPF axisangle0 -0.697386 -0.670914 -0.252045 -9.816038
+DOCKED: USER    NEWDPF quat0 -0.697386 -0.670914 -0.252045 -9.816038
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.702  32.233  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.462  31.365  45.142 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.771  32.982  42.706 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.571  34.083  43.102 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.444  34.691  42.174 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.520  34.202  40.853 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.724  33.105  40.462 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.850  32.494  41.388 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 9 of 50
+Run: 9 Seed: 157584320 1384180746 [ Run 9 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.957
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.010 33.192 42.438 quatxyzw 0.571515 0.508553 -0.641481 -0.056970 center 15.859 33.615 42.752 ntor 0
+State:	 16.010  33.192  42.438   0.572  0.509 -0.643 -173.468  
+
+DOCKED: MODEL        9
+DOCKED: USER    Run = 9
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.97 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.010473 33.191539 42.437693
+DOCKED: USER    NEWDPF quaternion0 0.571515 0.508553 -0.641481 -0.056970
+DOCKED: USER    NEWDPF axisangle0 0.572445 0.509381 -0.642525 -173.468220
+DOCKED: USER    NEWDPF quat0 0.572445 0.509381 -0.642525 -173.468220
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.171  43.733 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.465  31.202  44.967 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.776  33.007  42.670 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.921  32.584  41.325 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.798  33.272  40.459 -0.45 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.530  34.381  40.934 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.383  34.801  42.273 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.505  34.115  43.141 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 10 of 50
+Run: 10 Seed: 290560954 1801700608 [ Run 10 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.998 33.141 42.454 quatxyzw -0.060897 -0.056745 -0.018331 -0.996361 center 15.859 33.615 42.752 ntor 0
+State:	 15.998  33.141  42.454  -0.714 -0.666 -0.215 -9.779  
+
+DOCKED: MODEL       10
+DOCKED: USER    Run = 10
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.57 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.998077 33.141034 42.453596
+DOCKED: USER    NEWDPF quaternion0 -0.060897 -0.056745 -0.018331 -0.996361
+DOCKED: USER    NEWDPF axisangle0 -0.714488 -0.665771 -0.215072 -9.778713
+DOCKED: USER    NEWDPF quat0 -0.714488 -0.665771 -0.215072 -9.778713
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.703  32.226  43.835 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.471  31.354  45.147 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.765  32.978  42.703 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.558  34.085  43.095 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.426  34.696  42.163 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.503  34.203  40.843 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.713  33.101  40.457 -0.43 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.845  32.486  41.386 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 11 of 50
+Run: 11 Seed: 415248119 1693581866 [ Run 11 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.009 33.156 42.458 quatxyzw -0.052896 -0.054973 -0.025096 -0.996770 center 15.859 33.615 42.752 ntor 0
+State:	 16.009  33.156  42.458  -0.659 -0.685 -0.312 -9.213  
+
+DOCKED: MODEL       11
+DOCKED: USER    Run = 11
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.59 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.009040 33.156035 42.458299
+DOCKED: USER    NEWDPF quaternion0 -0.052896 -0.054973 -0.025096 -0.996770
+DOCKED: USER    NEWDPF axisangle0 -0.658642 -0.684503 -0.312484 -9.212941
+DOCKED: USER    NEWDPF quat0 -0.658642 -0.684503 -0.312484 -9.212941
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.234  43.827 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.465  31.356  45.128 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.775  32.991  42.705 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.583  34.082  43.114 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.456  34.697  42.191 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.524  34.226  40.862 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.719  33.140  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.845  32.521  41.380 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 12 of 50
+Run: 12 Seed: 1156483785 168190708 [ Run 12 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.996 33.171 42.463 quatxyzw 0.568193 0.495899 -0.655306 -0.042589 center 15.859 33.615 42.752 ntor 0
+State:	 15.996  33.171  42.463   0.569  0.496 -0.656 -175.118  
+
+DOCKED: MODEL       12
+DOCKED: USER    Run = 12
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.79 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.996374 33.170907 42.463331
+DOCKED: USER    NEWDPF quaternion0 0.568193 0.495899 -0.655306 -0.042589
+DOCKED: USER    NEWDPF axisangle0 0.568709 0.496350 -0.655901 -175.118132
+DOCKED: USER    NEWDPF quat0 0.568709 0.496350 -0.655901 -175.118132
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.210  43.816 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.476  31.297  45.104 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.764  32.997  42.706 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.851  32.551  41.363 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.720  33.200  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.501  34.292  40.893 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.412  34.734  42.229 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.543  34.088  43.136 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 13 of 50
+Run: 13 Seed: 139548550 1198766649 [ Run 13 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.981 33.189 42.466 quatxyzw -0.564204 -0.499954 0.655550 0.044442 center 15.859 33.615 42.752 ntor 0
+State:	 15.981  33.189  42.466  -0.565 -0.500  0.656 174.906  
+
+DOCKED: MODEL       13
+DOCKED: USER    Run = 13
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.88 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.980659 33.188829 42.465788
+DOCKED: USER    NEWDPF quaternion0 -0.564204 -0.499954 0.655550 0.044442
+DOCKED: USER    NEWDPF axisangle0 -0.564762 -0.500448 0.656198 174.905649
+DOCKED: USER    NEWDPF quat0 -0.564762 -0.500448 0.656198 174.905649
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.210  43.821 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.492  31.281  45.112 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.751  33.011  42.709 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.837  32.570  41.365 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.695  33.231  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.466  34.330  40.892 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.378  34.768  42.230 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.520  34.110  43.139 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 14 of 50
+Run: 14 Seed: 1009874647 513306073 [ Run 14 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.009 33.161 42.462 quatxyzw 0.571010 0.486036 -0.660095 -0.044619 center 15.859 33.615 42.752 ntor 0
+State:	 16.009  33.161  42.462   0.572  0.487 -0.661 -174.885  
+
+DOCKED: MODEL       14
+DOCKED: USER    Run = 14
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.77 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.008603 33.161130 42.462190
+DOCKED: USER    NEWDPF quaternion0 0.571010 0.486036 -0.660095 -0.044619
+DOCKED: USER    NEWDPF axisangle0 0.571579 0.486520 -0.660753 -174.885385
+DOCKED: USER    NEWDPF quat0 0.571579 0.486520 -0.660753 -174.885385
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.242  43.832 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.464  31.370  45.136 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.774  32.995  42.708 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.857  32.522  41.374 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.734  33.142  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.528  34.233  40.872 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.443  34.702  42.199 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.565  34.084  43.118 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 15 of 50
+Run: 15 Seed: 247172937 1656414022 [ Run 15 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.961
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.995 33.163 42.465 quatxyzw -0.567782 -0.492938 0.657843 0.043356 center 15.859 33.615 42.752 ntor 0
+State:	 15.995  33.163  42.465  -0.568 -0.493  0.658 175.030  
+
+DOCKED: MODEL       15
+DOCKED: USER    Run = 15
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.74 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.994802 33.162761 42.465452
+DOCKED: USER    NEWDPF quaternion0 -0.567782 -0.492938 0.657843 0.043356
+DOCKED: USER    NEWDPF axisangle0 -0.568316 -0.493401 0.658462 175.030214
+DOCKED: USER    NEWDPF quat0 -0.568316 -0.493401 0.658462 175.030214
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.214  43.829 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.477  31.314  45.126 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.763  32.991  42.710 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.845  32.535  41.370 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.713  33.175  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.498  34.269  40.883 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.413  34.721  42.217 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.545  34.083  43.130 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 16 of 50
+Run: 16 Seed: 113526706 1413399487 [ Run 16 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.989 33.146 42.457 quatxyzw -0.565189 -0.489366 0.661436 0.059875 center 15.859 33.615 42.752 ntor 0
+State:	 15.989  33.146  42.457  -0.566 -0.490  0.663 173.135  
+
+DOCKED: MODEL       16
+DOCKED: USER    Run = 16
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.85 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.988601 33.145508 42.457133
+DOCKED: USER    NEWDPF quaternion0 -0.565189 -0.489366 0.661436 0.059875
+DOCKED: USER    NEWDPF axisangle0 -0.566205 -0.490246 0.662625 173.134756
+DOCKED: USER    NEWDPF quat0 -0.566205 -0.490246 0.662625 173.134756
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.209  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.483  31.319  45.145 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.758  32.976  42.704 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.861  32.486  41.378 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.725  33.118  40.458 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.484  34.238  40.859 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.378  34.724  42.178 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.514  34.094  43.102 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 17 of 50
+Run: 17 Seed: 904347598 693151033 [ Run 17 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.991 33.153 42.459 quatxyzw 0.050998 0.054540 0.017381 0.997057 center 15.859 33.615 42.752 ntor 0
+State:	 15.991  33.153  42.459   0.665  0.711  0.227  8.794  
+
+DOCKED: MODEL       17
+DOCKED: USER    Run = 17
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.55 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.991017 33.152650 42.459100
+DOCKED: USER    NEWDPF quaternion0 0.050998 0.054540 0.017381 0.997057
+DOCKED: USER    NEWDPF axisangle0 0.665210 0.711405 0.226712 8.793750
+DOCKED: USER    NEWDPF quat0 0.665210 0.711405 0.226712 8.793750
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.207  43.827 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.480  31.305  45.127 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.759  32.984  42.706 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.551  34.085  43.116 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.413  34.717  42.194 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.486  34.251  40.864 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.698  33.154  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.835  32.519  41.380 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 18 of 50
+Run: 18 Seed: 1171928296 1386978023 [ Run 18 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.996 33.184 42.466 quatxyzw 0.568470 0.499480 -0.652772 -0.035367 center 15.859 33.615 42.752 ntor 0
+State:	 15.996  33.184  42.466   0.569  0.500 -0.653 -175.946  
+
+DOCKED: MODEL       18
+DOCKED: USER    Run = 18
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.79 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.995613 33.184143 42.465648
+DOCKED: USER    NEWDPF quaternion0 0.568470 0.499480 -0.652772 -0.035367
+DOCKED: USER    NEWDPF axisangle0 0.568826 0.499792 -0.653181 -175.946440
+DOCKED: USER    NEWDPF quat0 0.568826 0.499792 -0.653181 -175.946440
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.209  43.809 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.476  31.283  45.088 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.763  33.007  42.706 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.842  32.582  41.357 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.711  33.240  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.500  34.321  40.906 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.419  34.743  42.250 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.550  34.087  43.150 -0.29 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 19 of 50
+Run: 19 Seed: 1315150529 1091637015 [ Run 19 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.961
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.998 33.173 42.469 quatxyzw -0.042492 -0.049262 -0.026961 -0.997517 center 15.859 33.615 42.752 ntor 0
+State:	 15.998  33.173  42.469  -0.603 -0.700 -0.383 -8.076  
+
+DOCKED: MODEL       19
+DOCKED: USER    Run = 19
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.70 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.997851 33.173472 42.468745
+DOCKED: USER    NEWDPF quaternion0 -0.042492 -0.049262 -0.026961 -0.997517
+DOCKED: USER    NEWDPF axisangle0 -0.603390 -0.699530 -0.382856 -8.076424
+DOCKED: USER    NEWDPF quat0 -0.603390 -0.699530 -0.382856 -8.076424
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.227  43.832 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.477  31.325  45.126 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.765  33.004  42.715 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.582  34.083  43.137 -0.29 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.447  34.716  42.218 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.499  34.273  40.880 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.686  33.198  40.462 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.820  32.562  41.379 -0.43 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 20 of 50
+Run: 20 Seed: 573283522 1589747307 [ Run 20 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.997 33.184 42.468 quatxyzw -0.568642 -0.498677 0.653405 0.032085 center 15.859 33.615 42.752 ntor 0
+State:	 15.997  33.184  42.468  -0.569 -0.499  0.654 176.323  
+
+DOCKED: MODEL       20
+DOCKED: USER    Run = 20
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.84 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.997390 33.183628 42.468001
+DOCKED: USER    NEWDPF quaternion0 -0.568642 -0.498677 0.653405 0.032085
+DOCKED: USER    NEWDPF axisangle0 -0.568935 -0.498934 0.653742 176.322646
+DOCKED: USER    NEWDPF quat0 -0.568935 -0.498934 0.653742 176.322646
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.213  43.814 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.478  31.291  45.096 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.765  33.008  42.709 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.836  32.585  41.358 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.705  33.240  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.502  34.315  40.905 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.428  34.735  42.250 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.559  34.082  43.152 -0.29 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 21 of 50
+Run: 21 Seed: 48718027 2123527764 [ Run 21 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.991 33.174 42.469 quatxyzw -0.567000 -0.497007 0.655847 0.036878 center 15.859 33.615 42.752 ntor 0
+State:	 15.991  33.174  42.469  -0.567 -0.497  0.656 175.773  
+
+DOCKED: MODEL       21
+DOCKED: USER    Run = 21
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.77 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.991277 33.173988 42.469426
+DOCKED: USER    NEWDPF quaternion0 -0.567000 -0.497007 0.655847 0.036878
+DOCKED: USER    NEWDPF axisangle0 -0.567386 -0.497346 0.656293 175.773150
+DOCKED: USER    NEWDPF quat0 -0.567386 -0.497346 0.656293 175.773150
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.209  43.826 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.483  31.294  45.117 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.760  32.999  42.713 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.834  32.563  41.366 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.699  33.214  40.460 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.489  34.299  40.895 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.413  34.731  42.235 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.548  34.083  43.145 -0.29 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 22 of 50
+Run: 22 Seed: 78203297 344497825 [ Run 22 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.982 33.154 42.457 quatxyzw -0.054779 -0.054376 -0.012855 -0.996934 center 15.859 33.615 42.752 ntor 0
+State:	 15.982  33.154  42.457  -0.700 -0.695 -0.164 -8.976  
+
+DOCKED: MODEL       22
+DOCKED: USER    Run = 22
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.60 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.982333 33.154406 42.456864
+DOCKED: USER    NEWDPF quaternion0 -0.054779 -0.054376 -0.012855 -0.996934
+DOCKED: USER    NEWDPF axisangle0 -0.700067 -0.694923 -0.164281 -8.975739
+DOCKED: USER    NEWDPF quat0 -0.700067 -0.694923 -0.164281 -8.975739
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.208  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.490  31.307  45.142 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.752  32.985  42.705 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.535  34.097  43.106 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.391  34.729  42.178 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.467  34.252  40.852 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.688  33.145  40.456 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.831  32.510  41.383 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 23 of 50
+Run: 23 Seed: 198241895 495563123 [ Run 23 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.958
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.978 33.179 42.465 quatxyzw 0.563268 0.497819 -0.657542 -0.050437 center 15.859 33.615 42.752 ntor 0
+State:	 15.978  33.179  42.465   0.564  0.498 -0.658 -174.218  
+
+DOCKED: MODEL       23
+DOCKED: USER    Run = 23
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.90 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.977575 33.179351 42.465213
+DOCKED: USER    NEWDPF quaternion0 0.563268 0.497819 -0.657542 -0.050437
+DOCKED: USER    NEWDPF axisangle0 0.563986 0.498453 -0.658380 -174.217926
+DOCKED: USER    NEWDPF quat0 0.563986 0.498453 -0.658380 -174.217926
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.208  43.829 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.494  31.287  45.127 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.749  33.003  42.710 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.841  32.547  41.371 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.698  33.202  40.460 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.461  34.311  40.883 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.366  34.764  42.215 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.509  34.111  43.129 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 24 of 50
+Run: 24 Seed: 972219155 614659607 [ Run 24 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.964
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.993 33.159 42.463 quatxyzw -0.047368 -0.052234 -0.020962 -0.997291 center 15.859 33.615 42.752 ntor 0
+State:	 15.993  33.159  42.463  -0.644 -0.710 -0.285 -8.437  
+
+DOCKED: MODEL       24
+DOCKED: USER    Run = 24
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.52 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.993175 33.159268 42.462622
+DOCKED: USER    NEWDPF quaternion0 -0.047368 -0.052234 -0.020962 -0.997291
+DOCKED: USER    NEWDPF axisangle0 -0.643910 -0.710059 -0.284948 -8.437376
+DOCKED: USER    NEWDPF quat0 -0.643910 -0.710059 -0.284948 -8.437376
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.212  43.829 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.480  31.309  45.127 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.761  32.990  42.709 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.563  34.083  43.125 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.425  34.716  42.203 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.490  34.259  40.870 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.692  33.171  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.828  32.535  41.379 -0.43 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 25 of 50
+Run: 25 Seed: 854992891 269039675 [ Run 25 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.015 33.164 42.462 quatxyzw -0.572414 -0.483685 0.660824 0.041264 center 15.859 33.615 42.752 ntor 0
+State:	 16.015  33.164  42.462  -0.573 -0.484  0.661 175.270  
+
+DOCKED: MODEL       25
+DOCKED: USER    Run = 25
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.83 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.014846 33.164417 42.462341
+DOCKED: USER    NEWDPF quaternion0 -0.572414 -0.483685 0.660824 0.041264
+DOCKED: USER    NEWDPF axisangle0 -0.572902 -0.484097 0.661387 175.270177
+DOCKED: USER    NEWDPF quat0 -0.572902 -0.484097 0.661387 175.270177
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.256  43.835 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.461  31.394  45.142 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.779  33.000  42.708 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.855  32.526  41.375 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.736  33.139  40.457 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.540  34.223  40.869 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.462  34.693  42.196 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.581  34.083  43.117 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 26 of 50
+Run: 26 Seed: 696356366 2091186081 [ Run 26 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.989 33.182 42.466 quatxyzw -0.566488 -0.498830 0.654698 0.040390 center 15.859 33.615 42.752 ntor 0
+State:	 15.989  33.182  42.466  -0.567 -0.499  0.655 175.370  
+
+DOCKED: MODEL       26
+DOCKED: USER    Run = 26
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.81 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.988601 33.182259 42.466028
+DOCKED: USER    NEWDPF quaternion0 -0.566488 -0.498830 0.654698 0.040390
+DOCKED: USER    NEWDPF axisangle0 -0.566950 -0.499237 0.655232 175.370370
+DOCKED: USER    NEWDPF quat0 -0.566950 -0.499237 0.655232 175.370370
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.209  43.818 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.483  31.285  45.104 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.758  33.006  42.708 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.840  32.570  41.362 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.704  33.226  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.484  34.317  40.897 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.400  34.750  42.237 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.536  34.096  43.143 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 27 of 50
+Run: 27 Seed: 1716483877 474295881 [ Run 27 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.958
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.008 33.168 42.460 quatxyzw -0.570196 -0.485874 0.660954 0.044082 center 15.859 33.615 42.752 ntor 0
+State:	 16.008  33.168  42.460  -0.571 -0.486  0.662 174.947  
+
+DOCKED: MODEL       27
+DOCKED: USER    Run = 27
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.91 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.007952 33.167683 42.460464
+DOCKED: USER    NEWDPF quaternion0 -0.570196 -0.485874 0.660954 0.044082
+DOCKED: USER    NEWDPF axisangle0 -0.570751 -0.486346 0.661597 174.946957
+DOCKED: USER    NEWDPF quat0 -0.570751 -0.486346 0.661597 174.946957
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.707  32.250  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.470  31.378  45.142 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.774  33.001  42.707 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.853  32.528  41.373 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.728  33.147  40.455 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.523  34.238  40.866 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.442  34.708  42.193 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.566  34.091  43.114 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 28 of 50
+Run: 28 Seed: 12146197 1916686092 [ Run 28 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.964
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.999 33.128 42.452 quatxyzw 0.064383 0.060374 0.012614 0.996017 center 15.859 33.615 42.752 ntor 0
+State:	 15.999  33.128  42.452   0.722  0.677  0.141 10.230  
+
+DOCKED: MODEL       28
+DOCKED: USER    Run = 28
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.51 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.999224 33.127504 42.451662
+DOCKED: USER    NEWDPF quaternion0 0.064383 0.060374 0.012614 0.996017
+DOCKED: USER    NEWDPF axisangle0 0.722116 0.677150 0.141482 10.230436
+DOCKED: USER    NEWDPF quat0 0.722116 0.677150 0.141482 10.230436
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.208  43.831 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.475  31.332  45.143 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.766  32.963  42.701 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.544  34.083  43.089 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.411  34.697  42.158 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.502  34.194  40.843 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.728  33.080  40.460 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.860  32.463  41.388 -0.41 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 29 of 50
+Run: 29 Seed: 1995126276 812974707 [ Run 29 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.984 33.151 42.457 quatxyzw 0.057391 0.056765 0.010728 0.996679 center 15.859 33.615 42.752 ntor 0
+State:	 15.984  33.151  42.457   0.705  0.697  0.132  9.342  
+
+DOCKED: MODEL       29
+DOCKED: USER    Run = 29
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.58 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.984032 33.150814 42.456669
+DOCKED: USER    NEWDPF quaternion0 0.057391 0.056765 0.010728 0.996679
+DOCKED: USER    NEWDPF axisangle0 0.704774 0.697093 0.131739 9.341665
+DOCKED: USER    NEWDPF quat0 0.704774 0.697093 0.131739 9.341665
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.207  43.833 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.487  31.308  45.141 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.754  32.982  42.705 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.530  34.099  43.103 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.387  34.730  42.175 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.471  34.246  40.852 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.698  33.134  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.840  32.500  41.385 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 30 of 50
+Run: 30 Seed: 1076791390 926544730 [ Run 30 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.002 33.186 42.460 quatxyzw 0.569744 0.499487 -0.651330 -0.040909 center 15.859 33.615 42.752 ntor 0
+State:	 16.002  33.186  42.460   0.570  0.500 -0.652 -175.311  
+
+DOCKED: MODEL       30
+DOCKED: USER    Run = 30
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.84 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.002205 33.185971 42.460089
+DOCKED: USER    NEWDPF quaternion0 0.569744 0.499487 -0.651330 -0.040909
+DOCKED: USER    NEWDPF axisangle0 0.570222 0.499905 -0.651876 -175.310843
+DOCKED: USER    NEWDPF quat0 0.570222 0.499905 -0.651876 -175.310843
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.209  43.797 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.471  31.282  45.069 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.769  33.009  42.700 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.862  32.578  41.353 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.735  33.237  40.460 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.513  34.324  40.909 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.418  34.752  42.249 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.545  34.096  43.145 -0.29 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 31 of 50
+Run: 31 Seed: 1505875345 2096990517 [ Run 31 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.991 33.167 42.466 quatxyzw -0.566570 -0.493488 0.658724 0.039390 center 15.859 33.615 42.752 ntor 0
+State:	 15.991  33.167  42.466  -0.567 -0.494  0.659 175.485  
+
+DOCKED: MODEL       31
+DOCKED: USER    Run = 31
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.80 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.990540 33.167346 42.466053
+DOCKED: USER    NEWDPF quaternion0 -0.566570 -0.493488 0.658724 0.039390
+DOCKED: USER    NEWDPF axisangle0 -0.567010 -0.493871 0.659235 175.485046
+DOCKED: USER    NEWDPF quat0 -0.567010 -0.493871 0.659235 175.485046
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.217  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.484  31.316  45.135 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.759  32.995  42.711 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.831  32.545  41.369 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.696  33.186  40.455 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.487  34.275  40.879 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.413  34.721  42.214 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.548  34.083  43.131 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 32 of 50
+Run: 32 Seed: 1799140201 1202350838 [ Run 32 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.996 33.176 42.467 quatxyzw 0.568565 0.496586 -0.654819 -0.036716 center 15.859 33.615 42.752 ntor 0
+State:	 15.996  33.176  42.467   0.569  0.497 -0.655 -175.792  
+
+DOCKED: MODEL       32
+DOCKED: USER    Run = 32
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.78 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.996329 33.175607 42.466861
+DOCKED: USER    NEWDPF quaternion0 0.568565 0.496586 -0.654819 -0.036716
+DOCKED: USER    NEWDPF axisangle0 0.568949 0.496921 -0.655261 -175.791711
+DOCKED: USER    NEWDPF quat0 0.568949 0.496921 -0.655261 -175.791711
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.213  43.818 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.476  31.299  45.105 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.764  33.001  42.709 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.841  32.566  41.363 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.710  33.215  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.501  34.298  40.898 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.422  34.730  42.239 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.553  34.083  43.145 -0.29 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 33 of 50
+Run: 33 Seed: 1140847138 334074131 [ Run 33 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.989 33.157 42.461 quatxyzw 0.565471 0.492599 -0.659290 -0.054093 center 15.859 33.615 42.752 ntor 0
+State:	 15.989  33.157  42.461   0.566  0.493 -0.660 -173.798  
+
+DOCKED: MODEL       33
+DOCKED: USER    Run = 33
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.81 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.988926 33.157395 42.461212
+DOCKED: USER    NEWDPF quaternion0 0.565471 0.492599 -0.659290 -0.054093
+DOCKED: USER    NEWDPF axisangle0 0.566300 0.493321 -0.660256 -173.798323
+DOCKED: USER    NEWDPF quat0 0.566300 0.493321 -0.660256 -173.798323
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.208  43.830 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.485  31.307  45.133 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.758  32.985  42.707 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.856  32.512  41.374 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.719  33.153  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.484  34.265  40.872 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.384  34.734  42.198 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.520  34.096  43.116 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 34 of 50
+Run: 34 Seed: 132267786 1462345094 [ Run 34 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.958
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.014 33.146 42.455 quatxyzw -0.571384 -0.481310 0.662728 0.051501 center 15.859 33.615 42.752 ntor 0
+State:	 16.014  33.146  42.455  -0.572 -0.482  0.664 174.096  
+
+DOCKED: MODEL       34
+DOCKED: USER    Run = 34
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.92 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.013974 33.145705 42.454545
+DOCKED: USER    NEWDPF quaternion0 -0.571384 -0.481310 0.662728 0.051501
+DOCKED: USER    NEWDPF axisangle0 -0.572143 -0.481950 0.663609 174.095797
+DOCKED: USER    NEWDPF quat0 -0.572143 -0.481950 0.663609 174.095797
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.245  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.463  31.391  45.147 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.779  32.982  42.702 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.869  32.488  41.377 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.749  33.095  40.455 -0.43 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.537  34.196  40.853 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.445  34.687  42.172 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.565  34.082  43.097 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 35 of 50
+Run: 35 Seed: 2052766851 2048317773 [ Run 35 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.961
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.990 33.163 42.468 quatxyzw 0.566260 0.494391 -0.658111 -0.042618 center 15.859 33.615 42.752 ntor 0
+State:	 15.990  33.163  42.468   0.567  0.495 -0.659 -175.115  
+
+DOCKED: MODEL       35
+DOCKED: USER    Run = 35
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.73 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.989801 33.163090 42.467535
+DOCKED: USER    NEWDPF quaternion0 0.566260 0.494391 -0.658111 -0.042618
+DOCKED: USER    NEWDPF axisangle0 0.566775 0.494841 -0.658710 -175.114833
+DOCKED: USER    NEWDPF quat0 0.566775 0.494841 -0.658710 -175.114833
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.209  43.832 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.485  31.302  45.132 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.759  32.990  42.712 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.838  32.538  41.371 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.702  33.182  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.486  34.276  40.883 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.404  34.725  42.218 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.540  34.083  43.133 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 36 of 50
+Run: 36 Seed: 1897788856 742707163 [ Run 36 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.010 33.155 42.458 quatxyzw 0.056128 0.054586 0.025993 0.996591 center 15.859 33.615 42.752 ntor 0
+State:	 16.010  33.155  42.458   0.680  0.662  0.315  9.464  
+
+DOCKED: MODEL       36
+DOCKED: USER    Run = 36
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.54 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.010380 33.154991 42.458476
+DOCKED: USER    NEWDPF quaternion0 0.056128 0.054586 0.025993 0.996591
+DOCKED: USER    NEWDPF axisangle0 0.680373 0.661674 0.315086 9.464129
+DOCKED: USER    NEWDPF quat0 0.680373 0.661674 0.315086 9.464129
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.245  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.465  31.377  45.141 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.776  32.993  42.707 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.587  34.084  43.107 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.460  34.691  42.180 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.526  34.211  40.855 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.719  33.125  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.844  32.514  41.385 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 37 of 50
+Run: 37 Seed: 1112148077 134296663 [ Run 37 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.959
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.010 33.173 42.463 quatxyzw -0.571564 -0.492242 0.655364 0.038865 center 15.859 33.615 42.752 ntor 0
+State:	 16.010  33.173  42.463  -0.572 -0.493  0.656 175.545  
+
+DOCKED: MODEL       37
+DOCKED: USER    Run = 37
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.85 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.009661 33.172820 42.462552
+DOCKED: USER    NEWDPF quaternion0 -0.571564 -0.492242 0.655364 0.038865
+DOCKED: USER    NEWDPF axisangle0 -0.571996 -0.492614 0.655860 175.545301
+DOCKED: USER    NEWDPF quat0 -0.571996 -0.492614 0.655860 175.545301
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.228  43.815 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.464  31.331  45.102 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.775  33.002  42.705 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.857  32.555  41.363 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.735  33.192  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.529  34.274  40.893 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.445  34.718  42.229 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.567  34.083  43.136 -0.29 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 38 of 50
+Run: 38 Seed: 182407457 1107439549 [ Run 38 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.990 33.179 42.471 quatxyzw -0.566878 -0.495801 0.657049 0.033424 center 15.859 33.615 42.752 ntor 0
+State:	 15.990  33.179  42.471  -0.567 -0.496  0.657 176.169  
+
+DOCKED: MODEL       38
+DOCKED: USER    Run = 38
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.81 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.989991 33.179486 42.471444
+DOCKED: USER    NEWDPF quaternion0 -0.566878 -0.495801 0.657049 0.033424
+DOCKED: USER    NEWDPF axisangle0 -0.567195 -0.496078 0.657416 176.169147
+DOCKED: USER    NEWDPF quat0 -0.567195 -0.496078 0.657416 176.169147
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.221  43.833 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.483  31.311  45.129 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.759  33.006  42.715 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.823  32.571  41.368 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.688  33.217  40.458 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.487  34.297  40.891 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.420  34.729  42.232 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.555  34.084  43.145 -0.29 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 39 of 50
+Run: 39 Seed: 48827459 1636280623 [ Run 39 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.005 33.152 42.462 quatxyzw 0.569456 0.486786 -0.660568 -0.049093 center 15.859 33.615 42.752 ntor 0
+State:	 16.005  33.152  42.462   0.570  0.487 -0.661 -174.372  
+
+DOCKED: MODEL       39
+DOCKED: USER    Run = 39
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.77 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.005326 33.151720 42.461710
+DOCKED: USER    NEWDPF quaternion0 0.569456 0.486786 -0.660568 -0.049093
+DOCKED: USER    NEWDPF axisangle0 0.570143 0.487374 -0.661365 -174.372080
+DOCKED: USER    NEWDPF quat0 0.570143 0.487374 -0.661365 -174.372080
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.228  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.471  31.352  45.140 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.772  32.984  42.708 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.860  32.506  41.377 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.734  33.129  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.518  34.228  40.869 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.427  34.703  42.194 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.553  34.083  43.114 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 40 of 50
+Run: 40 Seed: 819663883 62193468 [ Run 40 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.957
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.999 33.191 42.437 quatxyzw -0.568654 -0.512555 0.640379 0.061929 center 15.859 33.615 42.752 ntor 0
+State:	 15.999  33.191  42.437  -0.570 -0.514  0.642 172.899  
+
+DOCKED: MODEL       40
+DOCKED: USER    Run = 40
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   43.00 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.999204 33.191228 42.436548
+DOCKED: USER    NEWDPF quaternion0 -0.568654 -0.512555 0.640379 0.061929
+DOCKED: USER    NEWDPF axisangle0 -0.569748 -0.513540 0.641610 172.898899
+DOCKED: USER    NEWDPF quat0 -0.569748 -0.513540 0.641610 172.898899
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.706  32.152  43.729 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.476  31.166  44.960 -2.99 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.767  33.003  42.668 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.920  32.583  41.323 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.790  33.283  40.460 -0.45 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.505  34.402  40.936 -0.41 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.350  34.819  42.275 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.480  34.121  43.141 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 41 of 50
+Run: 41 Seed: 120854843 2061977876 [ Run 41 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.958
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.983 33.156 42.458 quatxyzw -0.564016 -0.491684 0.660622 0.060914 center 15.859 33.615 42.752 ntor 0
+State:	 15.983  33.156  42.458  -0.565 -0.493  0.662 173.015  
+
+DOCKED: MODEL       41
+DOCKED: USER    Run = 41
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.92 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.982797 33.156140 42.458282
+DOCKED: USER    NEWDPF quaternion0 -0.564016 -0.491684 0.660622 0.060914
+DOCKED: USER    NEWDPF axisangle0 -0.565066 -0.492599 0.661851 173.015472
+DOCKED: USER    NEWDPF quat0 -0.565066 -0.492599 0.661851 173.015472
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.703  32.209  43.833 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.487  31.310  45.141 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.753  32.984  42.705 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.859  32.498  41.378 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.720  33.138  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.473  34.261  40.863 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.364  34.743  42.184 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.503  34.106  43.105 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 42 of 50
+Run: 42 Seed: 1397395418 376960523 [ Run 42 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.999 33.177 42.462 quatxyzw 0.568913 0.497852 -0.653315 -0.040760 center 15.859 33.615 42.752 ntor 0
+State:	 15.999  33.177  42.462   0.569  0.498 -0.654 -175.328  
+
+DOCKED: MODEL       42
+DOCKED: USER    Run = 42
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.80 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.998973 33.177322 42.462010
+DOCKED: USER    NEWDPF quaternion0 0.568913 0.497852 -0.653315 -0.040760
+DOCKED: USER    NEWDPF axisangle0 0.569386 0.498266 -0.653858 -175.327987
+DOCKED: USER    NEWDPF quat0 0.569386 0.498266 -0.653858 -175.327987
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.208  43.807 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.474  31.288  45.087 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.766  33.002  42.703 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.854  32.565  41.358 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.725  33.219  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.506  34.307  40.901 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.416  34.741  42.240 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.545  34.089  43.142 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 43 of 50
+Run: 43 Seed: 1839365286 980253825 [ Run 43 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.985 33.153 42.459 quatxyzw 0.053424 0.053921 0.015046 0.997002 center 15.859 33.615 42.752 ntor 0
+State:	 15.985  33.153  42.459   0.690  0.697  0.194  8.876  
+
+DOCKED: MODEL       43
+DOCKED: USER    Run = 43
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.54 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.984904 33.153205 42.459365
+DOCKED: USER    NEWDPF quaternion0 0.053424 0.053921 0.015046 0.997002
+DOCKED: USER    NEWDPF axisangle0 0.690397 0.696809 0.194444 8.876209
+DOCKED: USER    NEWDPF quat0 0.690397 0.696809 0.194444 8.876209
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.209  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.486  31.309  45.141 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.754  32.985  42.708 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.542  34.092  43.111 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.400  34.722  42.184 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.473  34.250  40.856 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.689  33.147  40.458 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.830  32.513  41.383 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 44 of 50
+Run: 44 Seed: 1730902954 2127029251 [ Run 44 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.960
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.998 33.183 42.463 quatxyzw 0.568740 0.498760 -0.652893 -0.038777 center 15.859 33.615 42.752 ntor 0
+State:	 15.998  33.183  42.463   0.569  0.499 -0.653 -175.555  
+
+DOCKED: MODEL       44
+DOCKED: USER    Run = 44
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.81 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.997769 33.182977 42.463161
+DOCKED: USER    NEWDPF quaternion0 0.568740 0.498760 -0.652893 -0.038777
+DOCKED: USER    NEWDPF axisangle0 0.569168 0.499136 -0.653385 -175.555381
+DOCKED: USER    NEWDPF quat0 0.569168 0.499136 -0.653385 -175.555381
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.210  43.807 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.475  31.287  45.086 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.765  33.007  42.704 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.850  32.575  41.357 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.720  33.231  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.504  34.317  40.904 -0.42 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.417  34.745  42.245 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.546  34.091  43.145 -0.29 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 45 of 50
+Run: 45 Seed: 1552829649 462982273 [ Run 45 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.964
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.997 33.142 42.457 quatxyzw -0.057207 -0.056662 -0.017048 -0.996607 center 15.859 33.615 42.752 ntor 0
+State:	 15.997  33.142  42.457  -0.695 -0.688 -0.207 -9.442  
+
+DOCKED: MODEL       45
+DOCKED: USER    Run = 45
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.48 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.996518 33.141991 42.456851
+DOCKED: USER    NEWDPF quaternion0 -0.057207 -0.056662 -0.017048 -0.996607
+DOCKED: USER    NEWDPF axisangle0 -0.695073 -0.688455 -0.207132 -9.441948
+DOCKED: USER    NEWDPF quat0 -0.695073 -0.688455 -0.207132 -9.441948
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.213  43.831 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.475  31.328  45.138 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.764  32.976  42.705 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.554  34.083  43.105 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.420  34.703  42.178 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.498  34.220  40.854 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.712  33.118  40.460 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.845  32.494  41.385 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 46 of 50
+Run: 46 Seed: 1899017087 522782078 [ Run 46 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.963
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.997 33.138 42.453 quatxyzw 0.060445 0.056350 0.017268 0.996430 center 15.859 33.615 42.752 ntor 0
+State:	 15.997  33.138  42.453   0.716  0.667  0.205  9.686  
+
+DOCKED: MODEL       46
+DOCKED: USER    Run = 46
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.53 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.996849 33.137905 42.452666
+DOCKED: USER    NEWDPF quaternion0 0.060445 0.056350 0.017268 0.996430
+DOCKED: USER    NEWDPF axisangle0 0.715986 0.667477 0.204543 9.685621
+DOCKED: USER    NEWDPF quat0 0.715986 0.667477 0.204543 9.685621
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.219  43.834 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.476  31.343  45.147 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.764  32.974  42.702 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.556  34.082  43.094 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.421  34.696  42.162 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.498  34.205  40.842 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.710  33.101  40.455 -0.43 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.844  32.484  41.385 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 47 of 50
+Run: 47 Seed: 1828656887 711540034 [ Run 47 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.961
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.996 33.164 42.466 quatxyzw -0.568098 -0.492711 0.657813 0.042219 center 15.859 33.615 42.752 ntor 0
+State:	 15.996  33.164  42.466  -0.569 -0.493  0.658 175.161  
+
+DOCKED: MODEL       47
+DOCKED: USER    Run = 47
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.73 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.996348 33.164076 42.465580
+DOCKED: USER    NEWDPF quaternion0 -0.568098 -0.492711 0.657813 0.042219
+DOCKED: USER    NEWDPF axisangle0 -0.568605 -0.493151 0.658400 175.160600
+DOCKED: USER    NEWDPF quat0 -0.568605 -0.493151 0.658400 175.160600
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.705  32.217  43.829 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.477  31.317  45.126 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.764  32.992  42.710 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.845  32.538  41.370 -0.43 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.714  33.177  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.501  34.269  40.884 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.418  34.719  42.217 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.549  34.083  43.131 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 48 of 50
+Run: 48 Seed: 1111308221 1026425342 [ Run 48 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.964
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.011 33.144 42.454 quatxyzw 0.060896 0.057957 0.022277 0.996211 center 15.859 33.615 42.752 ntor 0
+State:	 16.011  33.144  42.454   0.700  0.666  0.256  9.978  
+
+DOCKED: MODEL       48
+DOCKED: USER    Run = 48
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.52 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.010756 33.143867 42.454488
+DOCKED: USER    NEWDPF quaternion0 0.060896 0.057957 0.022277 0.996211
+DOCKED: USER    NEWDPF axisangle0 0.700202 0.666412 0.256147 9.978457
+DOCKED: USER    NEWDPF quat0 0.700202 0.666412 0.256147 9.978457
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.238  43.831 -0.66 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.462  31.375  45.140 -2.97 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.776  32.982  42.703 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.576  34.083  43.097 -0.30 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.451  34.688  42.169 -0.34 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.529  34.195  40.849 -0.44 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.732  33.099  40.460 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.856  32.491  41.386 -0.42 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 49 of 50
+Run: 49 Seed: 1253893582 1969862550 [ Run 49 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.962
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 16.030 33.216 42.468 quatxyzw 0.094886 0.040032 0.060202 0.992859 center 15.859 33.615 42.752 ntor 0
+State:	 16.030  33.216  42.468   0.795  0.336  0.505 13.702  
+
+DOCKED: MODEL       49
+DOCKED: USER    Run = 49
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.63 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.97 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 16.030444 33.216101 42.467574
+DOCKED: USER    NEWDPF quaternion0 0.094886 0.040032 0.060202 0.992859
+DOCKED: USER    NEWDPF axisangle0 0.795420 0.335587 0.504666 13.702298
+DOCKED: USER    NEWDPF quat0 0.795420 0.335587 0.504666 13.702298
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.704  32.508  43.938 -0.61 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.442  31.833  45.335 -3.00 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.792  33.090  42.733 -0.39 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      16.692  34.143  43.032 -0.29 +0.00    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      17.580  34.615  42.041 -0.36 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.571  34.037  40.754 -0.46 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      16.676  32.989  40.459 -0.43 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      15.786  32.513  41.449 -0.43 +0.01    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 50 of 50
+Run: 50 Seed: 1444942422 68560393 [ Run 50 of 50 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.958
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 15.985 33.150 42.457 quatxyzw 0.564656 0.490361 -0.660923 -0.062378 center 15.859 33.615 42.752 ntor 0
+State:	 15.985  33.150  42.457   0.566  0.491 -0.662 -172.847  
+
+DOCKED: MODEL       50
+DOCKED: USER    Run = 50
+DOCKED: USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =   42.92 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   +0.00 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move chlorobenzene.pdbqt
+DOCKED: USER    NEWDPF about 15.858800 33.614900 42.752500
+DOCKED: USER    NEWDPF tran0 15.985498 33.149789 42.456813
+DOCKED: USER    NEWDPF quaternion0 0.564656 0.490361 -0.660923 -0.062378
+DOCKED: USER    NEWDPF axisangle0 0.565758 0.491317 -0.662212 -172.847412
+DOCKED: USER    NEWDPF quat0 0.565758 0.491317 -0.662212 -172.847412
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  0 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1 CL6  8CL A 151      14.703  32.208  43.832 -0.65 -0.02    -0.084 Cl
+DOCKED: ATOM      2 Xx   8CL A 151      13.483  31.314  45.141 -2.98 -0.00    +0.000 Xx
+DOCKED: ATOM      3  C1  8CL A 151      15.755  32.979  42.703 -0.40 +0.01    +0.034 A 
+DOCKED: ATOM      4  C2  8CL A 151      15.864  32.488  41.378 -0.42 +0.01    +0.024 A 
+DOCKED: ATOM      5  C3  8CL A 151      16.727  33.124  40.459 -0.44 +0.00    +0.002 A 
+DOCKED: ATOM      6  C4  8CL A 151      17.479  34.248  40.860 -0.43 +0.00    +0.000 A 
+DOCKED: ATOM      7  C5  8CL A 151      17.368  34.735  42.179 -0.33 +0.00    +0.002 A 
+DOCKED: ATOM      8  C6  8CL A 151      16.505  34.102  43.101 -0.30 +0.00    +0.024 A 
+DOCKED: ENDROOT
+DOCKED: TORSDOF 0
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+DPF> analysis                             # perform a ranked cluster analysis
+
+
+		CLUSTER ANALYSIS OF CONFORMATIONS
+		_________________________________
+
+Number of conformations = 50
+
+RMSD cluster analysis will be performed using the ligand atoms only (8 / 8 total atoms).
+
+Outputting structurally similar clusters, ranked in order of increasing energy.
+
+
+________________________________________________________________________________
+
+Number of distinct conformational clusters found = 1,  out of 50 runs,
+Using an rmsd-tolerance of 2.0 A
+
+
+	CLUSTERING HISTOGRAM
+	____________________
+
+________________________________________________________________________________
+     |           |     |           |     |                                    
+Clus | Lowest    | Run | Mean      | Num | Histogram                          
+-ter | Binding   |     | Binding   | in  |                                    
+Rank | Energy    |     | Energy    | Clus|    5    10   15   20   25   30   35
+_____|___________|_____|___________|_____|____:____|____:____|____:____|____:___
+   1 |     -5.96 |  45 |     -5.96 |  50 |##################################################
+_____|___________|_____|___________|_____|______________________________________
+
+
+Number of multi-member conformational clusters found = 1, out of 50 runs.
+
+	RMSD TABLE
+	__________
+
+_____________________________________________________________________
+     |      |      |           |         |                 |
+Rank | Sub- | Run  | Binding   | Cluster | Reference       | Grep
+     | Rank |      | Energy    | RMSD    | RMSD            | Pattern
+_____|______|______|___________|_________|_________________|___________
+   1      1     45       -5.96      0.00      0.64           RANKING
+   1      2     28       -5.96      0.02      0.66           RANKING
+   1      3     24       -5.96      0.03      0.62           RANKING
+   1      4     48       -5.96      0.03      0.66           RANKING
+   1      5     46       -5.96      0.01      0.65           RANKING
+   1      6     43       -5.96      0.03      0.62           RANKING
+   1      7     36       -5.96      0.03      0.64           RANKING
+   1      8      2       -5.96      0.04      0.62           RANKING
+   1      9     17       -5.96      0.02      0.62           RANKING
+   1     10      8       -5.96      0.02      0.65           RANKING
+   1     11     10       -5.96      0.02      0.65           RANKING
+   1     12     29       -5.96      0.03      0.63           RANKING
+   1     13     11       -5.96      0.03      0.64           RANKING
+   1     14     22       -5.96      0.03      0.62           RANKING
+   1     15     49       -5.96      0.27      0.71           RANKING
+   1     16      3       -5.96      0.05      0.60           RANKING
+   1     17     19       -5.96      0.05      0.60           RANKING
+   1     18     35       -5.96      0.04      0.61           RANKING
+   1     19     47       -5.96      0.04      0.61           RANKING
+   1     20     15       -5.96      0.04      0.61           RANKING
+   1     21     39       -5.96      0.02      0.64           RANKING
+   1     22     14       -5.96      0.03      0.63           RANKING
+   1     23     21       -5.96      0.06      0.60           RANKING
+   1     24      7       -5.96      0.03      0.65           RANKING
+   1     25     32       -5.96      0.06      0.60           RANKING
+   1     26     12       -5.96      0.06      0.61           RANKING
+   1     27     18       -5.96      0.08      0.59           RANKING
+   1     28     31       -5.96      0.04      0.61           RANKING
+   1     29     42       -5.96      0.07      0.60           RANKING
+   1     30      5       -5.96      0.04      0.61           RANKING
+   1     31     38       -5.96      0.06      0.59           RANKING
+   1     32     44       -5.96      0.08      0.60           RANKING
+   1     33     33       -5.96      0.03      0.62           RANKING
+   1     34     26       -5.96      0.07      0.59           RANKING
+   1     35     25       -5.96      0.04      0.64           RANKING
+   1     36     20       -5.96      0.08      0.59           RANKING
+   1     37     30       -5.96      0.08      0.60           RANKING
+   1     38      1       -5.96      0.05      0.66           RANKING
+   1     39     37       -5.96      0.05      0.62           RANKING
+   1     40     16       -5.96      0.03      0.63           RANKING
+   1     41      4       -5.96      0.04      0.63           RANKING
+   1     42     13       -5.96      0.08      0.58           RANKING
+   1     43      6       -5.96      0.07      0.58           RANKING
+   1     44     23       -5.96      0.07      0.59           RANKING
+   1     45     27       -5.96      0.03      0.63           RANKING
+   1     46     34       -5.96      0.04      0.66           RANKING
+   1     47     41       -5.96      0.04      0.62           RANKING
+   1     48     50       -5.96      0.03      0.63           RANKING
+   1     49      9       -5.96      0.14      0.61           RANKING
+   1     50     40       -5.96      0.16      0.60           RANKING
+_______________________________________________________________________
+
+
+
+	INFORMATION ENTROPY ANALYSIS FOR THIS CLUSTERING
+	________________________________________________
+
+
+Information entropy for this clustering = 0.00  (rmstol = 2.00 Angstrom)
+
+_______________________________________________________________________
+
+
+	STATISTICAL MECHANICAL ANALYSIS
+	_______________________________
+
+
+Partition function, Q =    50.51            at Temperature, T = 298.15 K
+Free energy,        A ~ -2323.76 kcal/mol   at Temperature, T = 298.15 K
+Internal energy,    U =    -5.96 kcal/mol   at Temperature, T = 298.15 K
+Entropy,            S =     7.77 kcal/mol/K at Temperature, T = 298.15 K
+
+_______________________________________________________________________
+
+
+	LOWEST ENERGY DOCKED CONFORMATION from EACH CLUSTER
+	___________________________________________________
+
+
+
+Keeping original residue number (specified in the input PDBQ file) for outputting.
+
+MODEL       45
+USER    Run = 45
+USER    Cluster Rank = 1
+USER    Number of conformations in this cluster = 50
+USER  
+USER    RMSD from reference structure       = 0.641 A
+USER  
+USER    Estimated Free Energy of Binding    =   -5.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   42.48 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -5.96 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.96 kcal/mol
+USER        Electrostatic Energy            =   +0.00 kcal/mol
+USER    (2) Final Total Internal Energy     =   +0.00 kcal/mol
+USER    (3) Torsional Free Energy           =   +0.00 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   +0.00 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = chlorobenzene_1j3j_chainA_h_edited_rec.dpf
+USER    NEWDPF move	chlorobenzene.pdbqt
+USER    NEWDPF about	15.858800 33.614900 42.752500
+USER    NEWDPF tran0	15.996518 33.141991 42.456851
+USER    NEWDPF axisangle0	-0.695073 -0.688455 -0.207132 -9.441948
+USER    NEWDPF quaternion0	-0.057207 -0.056662 -0.017048 -0.996607
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1 CL6  8CL A 151      14.704  32.213  43.831 -0.65 -0.02    -0.084     0.641
+ATOM      2 Xx   8CL A 151      13.475  31.328  45.138 -2.98 -0.00    +0.000     0.641
+ATOM      3  C1  8CL A 151      15.764  32.976  42.705 -0.40 +0.01    +0.034     0.641
+ATOM      4  C2  8CL A 151      16.554  34.083  43.105 -0.30 +0.00    +0.024     0.641
+ATOM      5  C3  8CL A 151      17.420  34.703  42.178 -0.34 +0.00    +0.002     0.641
+ATOM      6  C4  8CL A 151      17.498  34.220  40.854 -0.43 +0.00    +0.000     0.641
+ATOM      7  C5  8CL A 151      16.712  33.118  40.460 -0.44 +0.00    +0.002     0.641
+ATOM      8  C6  8CL A 151      15.845  32.494  41.385 -0.42 +0.01    +0.024     0.641
+TER
+ENDMDL
+
+
+AVSFLD: # AVS field file
+AVSFLD: #
+AVSFLD: # Created by AutoDock
+AVSFLD: #
+AVSFLD: ndim=2           # number of dimensions in the field
+AVSFLD: nspace=1         # number of physical coordinates
+AVSFLD: veclen=7         # vector size
+AVSFLD: dim1=8           # atoms
+AVSFLD: dim2=1           # conformations
+AVSFLD: data=Real       # data type (byte,integer,Real,double)
+AVSFLD: field=uniform    # field coordinate layout
+AVSFLD: label= x y z vdW Elec q RMS
+AVSFLD: variable 1 file = chlorobenzene_1j3j_chainA_h_edited_rec.dlg.pdb filetype = ascii offset = 5 stride = 12
+AVSFLD: variable 2 file = chlorobenzene_1j3j_chainA_h_edited_rec.dlg.pdb filetype = ascii offset = 6 stride = 12
+AVSFLD: variable 3 file = chlorobenzene_1j3j_chainA_h_edited_rec.dlg.pdb filetype = ascii offset = 7 stride = 12
+AVSFLD: variable 4 file = chlorobenzene_1j3j_chainA_h_edited_rec.dlg.pdb filetype = ascii offset = 8 stride = 12
+AVSFLD: variable 5 file = chlorobenzene_1j3j_chainA_h_edited_rec.dlg.pdb filetype = ascii offset = 9 stride = 12
+AVSFLD: variable 6 file = chlorobenzene_1j3j_chainA_h_edited_rec.dlg.pdb filetype = ascii offset = 10 stride = 12
+AVSFLD: variable 7 file = chlorobenzene_1j3j_chainA_h_edited_rec.dlg.pdb filetype = ascii offset = 11 stride = 12
+AVSFLD: # end of file
+
+>>> Closing the docking parameter file (DPF)...
+This docking finished at:			9:08 54" a.m., 03/11/2020
+
+
+________________________________________________________________________________
+
+/home/angelina-inspiron/autodock/autodock4: Successful Completion on "angelina-inspiron"
+
+Real= 4m 06.68s,  CPU= 4m 06.48s,  System= 0.09s
+________________________________________________________________________________
+
