@@ -33,7 +33,7 @@ OS: Linux
 
 ## Download the package and then enter the folder:  
 
-`git clone https://github.com/lemyp-cadd/XBenv.git`
+`git clone https://github.com/emilioangelina/xbenv.git`
 
 `cd xbenv`
 
@@ -60,7 +60,7 @@ Or alternatively, install the packages through the environment file:
 USAGE: 
 -----
 
-Current version of the protocol accepts ligand-protein complexes in pdb format or as autodock .dlg files (docking log files). The charge density derived properties have to be provided as well as docking poses. (Protocol implements only steps 8 to 11 of Figure 1) 
+Current version of the protocol accepts ligand-protein complexes in pdb format or as autodock .dlg files (docking log files). The charge density derived properties have to be provided, as well as docking poses. (Protocol implements only steps 8 to 11 of Figure 1) 
 
 The protocol can be run by invoking the main script evaluate.py which takes five arguments:
 
