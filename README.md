@@ -1,18 +1,18 @@
 
-# XBenv: Halogen Bond (XB) prediction based in protein Environments 
+# xbenv: Halogen Bond (XB) prediction based in protein Environments 
 
 
 ![figure1](https://github.com/lemyp-cadd/XBenv/blob/main/figure1.jpg)
 
 
-This module, termed XBenv, is an implementation of the protocol for XB prediction based on XB environment described in the Chemrxiv preprint 
-**"Targeting Protein Pockets with Halogen Bonds"** (*Bogado ML, Villafañe RN, Gomez Chavez JL, Angelina EL, Sosa GL, Peruchena NM (2021) Chemrxiv ....*). 
+This module, termed xbenv, is an implementation of the protocol for XB prediction based on halogen environment described in 
+**"Targeting Protein Pockets with Halogen Bonds"** (*Bogado ML, Villafañe RN, Gomez Chavez JL, Angelina EL, Sosa GL, Peruchena NM (2022) to be published...*). 
 
 -------------
 INSTALLATION: 
 -------------
 
-Current version of XBenv works under python2. You can setup a python2 environment in conda with the required dependencies. 
+Current version of xbenv works under python2. You can setup a python2 environment in conda with the required dependencies. 
 
 Required dependencies:
 ```
