@@ -64,7 +64,7 @@ Current version of the protocol accepts ligand-protein complexes in pdb format o
 
 The protocol can be run by invoking the main script evaluate.py which takes 3 arguments:
 
-`python evaluate.py arg1 arg2 arg3 
+`python evaluate.py arg1 arg2 arg3` 
 
 arg1 can take any value. It indicates the folder where the input data is stored, i.e. "data"
 By input data we mean: 
